@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLTEST - Agendar Cita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" href="index.html">ALLTEST</a>
+        <div class="ms-auto">
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Refacciones</a></li>
+                <li class="nav-item"><a class="nav-link active" href="citas.html">Agendar Cita</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil.html">Mi Cuenta</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-4">
+        <h2 class="mb-3">Agendar Cita de Inspección o Reparación</h2>
+
+        <div class="card p-4 bg-light shadow-sm">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Nombre del Propietario:</label>
+                    <input type="text" class="form-control" placeholder="Escribe tu nombre completo">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Modelo del Vehículo:</label>
+                        <input type="text" class="form-control" placeholder="Ej. Nissan Versa 2022">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Tipo de Servicio:</label>
+                        <select class="form-select">
+                            <option selected>Selecciona una opción</option>
+                            <option value="1">Diagnóstico Computarizado</option>
+                            <option value="2">Mantenimiento y Frenos</option>
+                            <option value="3">Afinación General</option>
+                            <option value="4">Revisión Preventiva</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Fecha Preferida para la Cita:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Comentarios o Síntomas de la Falla:</label>
+                    <textarea class="form-control" rows="3" placeholder="Describe brevemente qué le sucede al auto..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 py-2">Confirmar y Agendar Cita</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container small">© 2026 ALLTEST - Todos los derechos reservados</div>
+    </footer>
+</body>
+</html>
